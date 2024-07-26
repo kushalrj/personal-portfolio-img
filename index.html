@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be00dd060e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX</p>
+                <h1>Hi,I'm <span>Kushal</span> <br>Sharma From Rajasthan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about meeeeeeeeeeeeeeeeee -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A rerum, cupiditate quaerat error, deleniti ad asperiores, expedita odit omnis minus harum possimus? Itaque quis repellendus accusantium consequuntur doloremque maiores autem.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link kush1" onclick="opentab('skills','kush1')">Skills</p>
+                        <p class="tab-links kush2" onclick="opentab('experience','kush2')">Experience</p>
+                        <p class="tab-links kush3" onclick="opentab('education','kush3')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building iOS/Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front-end Developer</span><br>Design website for parakram event</li>
+                            <li><span>Vice-Captain</span><br>Powerlifting club of IIT(ISM)Dhanbad</li>
+                            <li><span>Member</span><br>Chayanika Sangh</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Current</span><br>Int.Mtech form IIT(ISM)Dhanbad</li>
+                            <li><span>2019</span><br>Senior Secondary</li>
+                            <li><span>2017</span><br>Secondary School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam eos in soequi tempora tempore reiciendis quasi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam eos in soequi tempora tempore reiciendis quasi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam eos in soequi tempora tempore reiciendis quasi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- ----------------portflio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing e cumque, rerum sunt ea facilis. Praesentium, perspiciatis a.</p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing e cumque, rerum sunt ea facilis. Praesentium, perspiciatis a.</p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing e cumque, rerum sunt ea facilis. Praesentium, perspiciatis a.</p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ......................contact.............. -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@kushal.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9556894555</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV </a>
+                </div>
+                
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" id="">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit " class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Kushal. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        // yeh fucntion hide karega skill baaki ke content aur naye wale show karega
+        function opentab (tabname,name){
+            for(tablink of tablinks){
+                // yeh remove kar dega activelink first me se
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                // yeh remove kar dega activelink first me se
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            // in short ye function pehle apne skipp wale part par tha undeline aur uske tabf
+            // jaise he click kiya
+            // 1.pehle to skill me se underline hatai
+            // 2.jispe click kiya uspe undeline lagai aur show kiYA
+        }
+    </script>
+    <script>
+         var sidemenu=document.getElementById("sidemenu");
+         function openmenu(){
+         sidemenu.style.right="0"; 
+        //  sidemenu.style.transition.right="0.5s";
+
+         }
+         function closemenu(){
+         sidemenu.style.right="-200px";   
+         }
+    </script>
+</body>
+</html>
